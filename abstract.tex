@@ -1,0 +1,46 @@
+\documentclass[a4paper, 11pt, abstracton]{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{url}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage[small, bf, up, hang]{caption}
+\usepackage{lmodern}
+
+% Centre table cells with custom width, e.g. C{2cm}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Default margins
+\geometry{textwidth=345pt,textheight=598pt}
+
+% Big maths font
+%\everymath{\displaystyle}
+\everymath=\expandafter{\the\everymath\displaystyle}
+
+% Blank page
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+\begin{document}
+
+\begin{abstract}
+
+Injuries during tennis matches are phenomena that can drastically alter the in-play betting odds of a match even during the course of a single point.  In-play tennis betting markets are some of the most heavily traded in the industry and enforce a variety of payout policies.  These markets often differ in their odds for a match as only some of them take player retirement into account.  We specifically investigate the Betfair Set Betting market, in which all bets are cancelled in the event of a retirement, and the Betfair Match Odds market, which only pays out on retirements if they occur after the first set has been played.
+
+By interpreting the probability a player will retire at some point during the remainder of a given match as a function of any gap in the odds of the two Betfair markets, we create the world's first model of a tennis match that takes into account risk of retirement.  We test our model on randomly generated artificial matches to see if we can imitate the expected behaviour of markets that use different retirement payout rules.
+
+We find that we are able to follow the progression of Betfair in-play tennis markets for a number of real-life matches to a good degree of accuracy and can provide a value for the retirement risk of a given player at any point.  We also attempt to predict the evolution of a market which pays out on retirements even after just one ball has been played.  We find that although this \textit{after one ball} model generally behaves as expected, it is very sensitive to any gap in the Betfair odds which in turn affects our predicted retirement risk.  Similarly, we note that larger than expected retirement risk spikes are seen when a player has a low match-winning probability.  Such fragilities are due to a heavy dependence on imperfect odds data.
+
+\end{abstract}
+
+\end{document}
