@@ -39,45 +39,30 @@
 
 \begin{abstract}
 
-Tennis is a hugely popular sport around the globe. Its fans include
-not only spectators attracted by the excitement of the game but also
-speculators attracted by the possibility of making large financial
-gains.  Indeed, every on-court development drives the movement of
-several in-play financial markets.
+Tennis attracts both spectators and speculators.  Indeed, every
+on-court development impacts on in-play financial markets.  For
+singles matches, sophisticated traders make use of quantitative
+models.  These yield the probability of each player winning the match
+given the current score and the probability of each player winning a
+point on serve.  Significantly, these models ignore retirement risk,
+which can drastically and rapidly alter in-play odds. The precise
+impact on a market depends on that market.s payout policy in the case
+of player retirement.
 
-As in other financial markets, sophisticated traders make use of
-quantitative models in an attempt to gain an advantage over their
-peers. For a tennis singles match, the models are usually based on
-hierarchical Markov chains and typically yield the probability of each
-player winning the match as a function of three parameters: the
-current score, and the probability of each player winning a point on
-their serve.
+This paper proposes novel quantitative models for the in-play
+evolution of retirement risk due to injury and the corresponding
+impacts on in-play match outcome markets under different retirement
+payout policies. Injury occurrence is assumed to be a Bernoulli
+process, with a magnitude sampled from a truncated exponential
+distribution. Retirement risk is propagated from one point to another
+subject to a damping parameter that reflects a player's ability to
+``run off'' an injury.
 
-These models, however, ignore the potential impact of retirement risk
-due to injuries, which can drastically alter in-play betting odds~--
-even during the course of a single point. The exact nature of the
-impact on a given market depends on the payout policy of that market
-in the case of player retirement.
-
-This paper proposes novel quantitative models which reflect the
-in-play evolution of retirement risk due to injury and the
-corresponding impacts on in-play financial markets based on match
-outcome under different retirement payout policies. Injuries are
-assumed to occur according to a Bernoulli process, with a magnitude
-sampled from a truncated exponential distribution. Retirement risk is
-propagated from one point to another subject to a damping parameter
-that reflects a player's ability to ``run off'' an injury.
-
-In terms of practical deployment, a challenging problem is to
-correctly parameterise the models given the availability of a current
-score feed and odds data in two match outcome markets with different
-retirement policies. Artificially generated match data shows that it
-is possible to infer model parameters effectively. We also find that
-we are able to follow the progression of Betfair in-play tennis
-markets for a number of real-life matches to a good degree of accuracy
-and can provide a value for the retirement risk of a given player at
-any point.  It is also possible to predict the evolution of
-match outcome markets that feature other retirement policies.
+An important practical challenge is to parameterise our models given a
+score feed and odds data for two match outcome markets with different
+retirement policies. We demonstrate the feasibility of not only
+inferring model parameters from synthetic data effectively but also of
+mimicking real in-play markets.
 
 \end{abstract}
 
