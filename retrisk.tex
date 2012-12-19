@@ -1,15 +1,4 @@
-%% This file is to be used as a template for your submission. 
-%% Rename this file and replace the text with the text of 
-%% your manuscript.
-%%
-%% The standard LaTeX document class "article" is recommended. 
-%% Use options letterpaper and 12pt.
-\documentclass[letterpaper,12pt]{article}
-
-%% This is the recommended preamble for your document.
-
-%% Load De Gruyter specific settings 
-\usepackage{dgjournal}          
+\documentclass[letterpaper,12pt]{elsarticle}
 
 %% The mathptmx package is recommended for Times compatible math symbols.
 %% Use mtpro2 or mathtime instead of mathptmx if you have the commercially
@@ -25,21 +14,66 @@
 \usepackage{graphicx}
 \usepackage{float}
 
-%% Use natbib with these recommended options
-\usepackage[authoryear,comma,longnamesfirst,sectionbib]{natbib} 
 \usepackage{url}
 
 % Centre table cells with custom width, e.g. C{2cm}
 \usepackage{array}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
-%% Start your document body here
+% Horizontal line for title page
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
 \begin{document}
 
-%% Do NOT include any fronmatter information; including the title, author names,
-%% institutes, acknowledgments and title footnotes (author information, funding
-%% sources, etc.). Start the document with the first section or paragraph of
-%% the article.
+\title{Quantitative Models for Retirement Risk in Professional Tennis}
+
+\author[icl]{A.C.J.˜Cutmore\corref{cor1}}
+\ead{adam.cutmore08@imperial.ac.uk}
+
+\author[icl]{W.J.˜Knottenbelt}
+\ead{w.knottenbelt@imperial.ac.uk}
+
+\cortext[cor1]{Corresponding author}
+
+\address[icl]{Imperial College London, South Kensington Campus, Exhibition Road,
+London, SW7 2AZ, UK}
+
+\date{\today}
+
+\begin{abstract}
+
+Tennis attracts both spectators and speculators.  Indeed, every
+on-court development impacts on in-play financial markets.  For
+singles matches, sophisticated traders make use of quantitative
+models.  These yield the probability of each player winning the match
+given the current score and the probability of each player winning a
+point on serve.  Significantly, these models ignore retirement risk,
+which can drastically and rapidly alter in-play odds. The precise
+impact on a market depends on that market.s payout policy in the case
+of player retirement.
+
+This paper proposes novel quantitative models for the in-play
+evolution of retirement risk due to injury and the corresponding
+impacts on in-play match outcome markets under different retirement
+payout policies. Injury occurrence is assumed to be a Bernoulli
+process, with a magnitude sampled from a truncated exponential
+distribution. Retirement risk is propagated from one point to another
+subject to a damping parameter that reflects a player's ability to
+``run off'' an injury.
+
+An important practical challenge is to parameterise our models given a
+score feed and odds data for two match outcome markets with different
+retirement policies. We demonstrate the feasibility of not only
+inferring model parameters from synthetic data effectively but also of
+mimicking real in-play markets.
+
+\end{abstract}
+
+\begin{keyword}
+tennis modelling \sep in-play betting markets \sep retirement risk \sep injuries
+\end{keyword}
+
+\maketitle
 
 \section{Introduction}
 
@@ -394,7 +428,7 @@ We applied our model to a number of real-world matches (from the point of view o
 We note that a potentially useful application of our model is in the real-time estimates of player retirement risk during professional tennis matches.  Such information could be displayed on-screen for the viewer during a live broadcast or used as a commentary aid.
 
 % BibTeX support
-\bibliographystyle{DeGruyter}
+\bibliographystyle{model1a-num-names}
 \bibliography{paper}
 
 \end{document}
