@@ -1,6 +1,7 @@
-﻿elsarticle/*.*
+﻿elsarticle/
 figures.zip
-sourcefiles.zip
+retrisk_jqas/
+retrisk_camwa/
 matches/Thumbs.db
 retrisk.aux
 retrisk.bbl
@@ -14,5 +15,5 @@ abstract.out
 abstract.log
 abstract.pdf
 abstract.synctex.gz
-paper.zip
-paper1.zip
+draft.zip
+draft1.zip
