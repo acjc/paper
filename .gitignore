@@ -1,13 +1,9 @@
-﻿elsarticle/
-figures.zip
-retrisk_jqas/
-retrisk_camwa/
-matches/Thumbs.db
+﻿matches/Thumbs.db
 retrisk.*
 !retrisk.tex
 retrisk.synctex.gz
 abstract.*
 !abstract.tex
 abstract.synctex.gz
-draft.zip
-draft1.zip
+diff-pdf-2012-02-28
+*.zip
