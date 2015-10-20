@@ -7,3 +7,5 @@ abstract.*
 abstract.synctex.gz
 diff-pdf-2012-02-28
 *.zip
+.DS_Store
+paper.log

@@ -1,4 +1,4 @@
-\documentclass[authoryear, 12pt]{elsarticle}
+\documentclass[letterpaper, 12pt]{article}
 
 %% The mathptmx package is recommended for Times compatible math symbols.
 %% Use mtpro2 or mathtime instead of mathptmx if you have the commercially
@@ -16,6 +16,8 @@
 
 \usepackage{url}
 
+\usepackage[authoryear,comma,numbers]{natbib}
+
 % Centre table cells with custom width, e.g. C{2cm}
 \usepackage{array}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -27,20 +29,9 @@
 
 \title{Quantitative Models for Retirement Risk in Professional Tennis}
 
-\author[icl]{A.C.J.˜Cutmore\corref{cor1}\fnref{pn1}}
-\ead{adam.cutmore08@imperial.ac.uk}
-
-\author[icl]{W.J.˜Knottenbelt\fnref{pn1}}
-\ead{w.knottenbelt@imperial.ac.uk}
-
-\cortext[cor1]{Corresponding author}
-
-\fntext[pn1]{\textit{Phone numbers: }+447847051549 (A.C.J.Cutmore), +442075948331 (W.J.Knottenbelt)}
-
-\address[icl]{Imperial College London, South Kensington Campus, Exhibition Road,
-London, SW7 2AZ, UK}
-
 \date{\today}
+
+\author{A.C.J.Cutmore, W.J.Knottenbelt}
 
 \begin{abstract}
 
@@ -70,10 +61,6 @@ inferring model parameters from synthetic data effectively but also of
 mimicking real in-play markets.
 
 \end{abstract}
-
-\begin{keyword}
-tennis modelling \sep in-play betting markets \sep retirement risk \sep injuries
-\end{keyword}
 
 \maketitle
 
@@ -430,7 +417,7 @@ We applied our model to a number of real-world matches (from the point of view o
 We note that a potentially useful application of our model is in the real-time estimates of player retirement risk during professional tennis matches.  Such information could be displayed on-screen for the viewer during a live broadcast or used as a commentary aid.
 
 % BibTeX support
-\bibliographystyle{elsarticle-harv}
+\bibliographystyle{apalike}
 \bibliography{paper}
 
 \end{document}
